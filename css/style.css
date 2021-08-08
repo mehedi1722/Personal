@@ -1,0 +1,657 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: white;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    color: #777777;
+    font-size: 14px;
+}
+
+a,
+p,
+span,
+big,
+small{
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Poppins', sans-serif;
+    color: #222222;
+}
+
+
+
+/* ===============================================
+            Common Css Start Hear
+=============================================== */
+.container{
+    width: 1170px;
+    margin: auto
+}
+
+a.btn{
+    background: -webkit-linear-gradient(0deg,#8490ff 0%, #62bdfc 100%);
+    text-transform: uppercase;
+    padding: 10px 30px;
+    line-height: 42px;
+    color: white;
+    font-weight: 400;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.d-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.w-50{
+    width: 50%;
+}
+
+.w-25{
+    width: 25%;
+}
+section{
+    margin-bottom: 100px;
+}
+
+.section_title {
+    margin-bottom: 30px;
+}
+
+.section_title h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.section_title p {
+    width: 600px;
+    margin: auto;
+    font-weight: 300;
+}
+/* ===============================================
+            Common Css End Hear
+=============================================== */
+
+
+/* ===============================================
+            Header Section Start Hear
+=============================================== */
+#Header-section {
+    background: #ffffff;
+    padding: 20px 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin: 0 15px;
+    position: relative;
+}
+
+.menu ul li a {
+    color: black;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.menu ul li a svg{
+    margin-left: 5px;
+    color: #777777;
+}
+
+.menu ul li ul {
+    position: absolute;
+    background: #fcfcfc;
+    width: 120px;
+    top: 160%;
+    left: 0;
+    border-radius: 5px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.menu ul li ul li {
+    display: block;
+    padding: 10px 15px;
+    margin: 0;
+}
+
+.menu ul li:hover > ul{
+    top: 100%;
+    visibility: visible;
+    opacity: 1;
+    transition: .3s ease-in;
+}
+
+.menu ul li ul li ul{
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+/* ===============================================
+            Header Section End Hear
+=============================================== */
+
+
+
+/* ===============================================
+            Banner Section Start Hear
+=============================================== */
+section#Banner-section {
+    background: #f9f9ff;
+    padding-top: 50px;
+}
+
+.Banner_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner_text {
+    width: 50%;
+}
+
+.Banner_image {
+    width: 50%;
+    padding-left: 50px;
+}
+
+.Banner_image img {
+    width: 90%;
+}
+
+.banner_text h5{
+    font-size: 14px;
+    color: #222222;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.banner_text h1 {
+    margin: 15px 0;
+    font-size: 60px;
+    text-transform: uppercase;
+    color: #222222;
+    font-weight: 600;
+}
+
+.banner_text p{
+    margin-bottom: 25px;
+    line-height: 1.625em;
+    font-weight: 300;
+}
+
+/* ===============================================
+            Banner Section End Hear
+=============================================== */
+
+/* ===============================================
+            About Section Start Hear
+=============================================== */
+
+.About_image img {
+    width: 100%;
+    padding-right: 70px;
+}
+
+.About_text {
+    padding-left: 40px;
+}
+
+.About_text h6 {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.About_text h2 {
+    font-size: 36px;
+    font-weight: 600;
+    padding: 20px 0;
+}
+
+.About_text p {
+    font-weight: 300;
+    line-height: 24px;
+    margin: 0 0 30px 0;
+}
+
+/* ===============================================
+            About Section End Hear
+=============================================== */
+
+
+/* ===============================================
+            Services Section Start Hear
+=============================================== */
+.service_card {
+    padding: 25px 20px;
+    margin: 15px;
+    width: 30%;
+}
+
+.service_icon svg {
+    font-size: 35px;
+    color: #2196f3;
+}
+
+.service_text {
+    margin-top: 20px;
+    position: relative;
+}
+
+.service_text h4 {
+    font-size: 18px;
+    padding-bottom: 10px;
+    font-weight: 500;
+}
+
+.service_text p{
+    font-weight: 300;
+}
+
+.service_text::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 2px;
+    background: #03A9F4;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.service_card:hover .service_text::after {
+    width: 100px;
+    transition: .3s ease-in;
+}
+
+/* ===============================================
+            Services Section End Hear
+=============================================== */
+
+
+/* ===============================================
+            Counter Section Start Hear
+=============================================== */
+
+section#Counter_section {
+    background: -webkit-linear-gradient(0deg,#8490ff 0%, #62bdfc 100%);
+    padding: 100px 0;
+}
+
+.counter_column h4 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.counter_column p {
+    color: white;
+    font-size: 14px;
+}
+/* ===============================================
+            Counter Section End Hear
+=============================================== */
+
+
+/* ===============================================
+            Projects Section Start Hear
+=============================================== */
+.Project_nav ul li {
+    display: inline-block;
+    margin: 10px;
+    position: relative;
+}
+
+.Project_nav ul {
+    text-align: center;
+}
+
+.Project_nav {
+    padding: 40px 0;
+}
+
+.Project_nav ul li a {
+    color: #222222;
+}
+
+.Project_nav ul li::after {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 3px;
+    background: #2196f3;
+    left: 0;
+    bottom: -5px;
+    transition: .3s ease-in;
+
+}
+
+.Project_nav ul li:hover::after {
+    width: 20px;
+}
+
+.project_card {
+    margin: 0 0 20px 0;
+}
+
+.card_text h4 {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 0 5px 0;
+}
+
+/* ===============================================
+            Projects Section End Hear
+=============================================== */
+
+/* ===============================================
+            Testimonial Section Start Hear
+=============================================== */
+section#Testimonial {
+    background: #f9f9ff;
+    padding: 100px 0;
+}
+
+.review_text {
+    width: 70%;
+}
+
+.review {
+    background: white;
+    padding: 20px 30px;
+    margin: 20px;
+    width: 46%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.client_image {
+    width: 30%;
+}
+
+.client_image img {
+    width: 40px;
+}
+
+.review_text h5 {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 0 5px 0;
+}
+
+.review_text h6 {
+    font-size: 12px;
+    font-weight: 400;
+}
+/* ===============================================
+            Testimonial Section End Hear
+=============================================== */
+
+/* ===============================================
+            Pricing Section Start Hear
+=============================================== */
+
+.pricing_card_row {
+    display: flex;
+}
+
+.Pricing_card.w-25.text-center {
+    background: whitesmoke;
+    padding: 50px 20px;
+    z-index: -2;
+    border-right: 1px solid rgb(224, 224, 224);
+}
+
+.pricing_card_row .Pricing_card.w-25.text-center:nth-child(4){
+    border-right: none;
+}
+
+.pricing_number h2 {
+    font-size: 40px;
+    font-weight: 300;
+    color: #2f2e2e;
+    background: #ffffff;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    line-height: 110px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.pricing_number h2::after {
+    content: "";
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    background: -webkit-linear-gradient(0deg,#8490ff 0%, #62bdfc 100%);
+    left: -15px;
+    top: -15px;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.PlanName {
+    margin-top: 25px;
+}
+
+.PlanName h4 {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 10px 0;
+}
+
+.PlanName p {
+    font-size: 16px;
+    color: #222222;
+}
+
+.pricing_describtion {
+    margin-top: 30px;
+}
+
+.pricing_describtion ul li {
+    border-bottom: 1px solid #d2d2d2;
+    padding: 10px 0;
+}
+
+.pricing_describtion ul li p {
+    font-size: 14px;
+}
+
+.Price {
+    margin-top: 30px;
+}
+
+.Price h4 {
+    font-size: 25px;
+    font-weight: 500;
+    padding: 0 0 10px 0;
+}
+
+/* ===============================================
+            Pricing Section End Hear
+=============================================== */
+
+
+
+/* ===============================================
+            Blog Section Start Hear
+=============================================== */
+.blog_card{
+    width: 30%;
+}
+
+.bloger_image img {
+    width: 40px;
+}
+
+.like_comments {
+    padding: 15px 0;
+}
+
+.bloger_image h6 {
+    padding-left: 10px;
+}
+
+.bloger_image {
+    width: 40%;
+    overflow: hidden;
+}
+
+.bloger_image:hover img{
+    transform: scale(1.05);
+    transition: .30s ease-out;
+}
+
+.blog_image:hover img{
+    transform: scale(1.05);
+    transition: .30s ease-out;
+}
+
+.blog_image{
+    transform: scale(1.05);
+    transition: .40s ease-out;
+    overflow: hidden;
+}
+
+.bloger_image h6 {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.likes {
+    width: 44%;
+}
+
+.likes span {
+    margin-right: 11px;
+}
+
+.likes span:last-child {
+    margin: 0;
+}
+
+.Blog_description {
+    padding: 20px 0;
+}
+
+.Blog_description h5 {
+    font-size: 14px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+/* ===============================================
+            Blog Section End Hear
+=============================================== */
+
+
+
+/* ===============================================
+            Brand Section Start Hear
+=============================================== */
+section#Brand_section {
+    background: #03a9f4;
+    padding: 100px 0;
+    margin-bottom: 0;
+}
+
+.brand{
+    width: 20%;
+}
+/* ===============================================
+            Brand Section End Hear
+=============================================== */
+
+
+
+/* ===============================================
+            Footer Section Start Hear
+=============================================== */
+footer{
+    background-color: #04091e;
+    padding: 80px 0;
+}
+
+.footer_row .footer_column:nth-child(1) {
+    width: 40%;
+}
+
+.footer_column h3 {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.footer_column .input_btn {
+    margin-top: 20px;
+    position: relative;
+}
+
+.footer_column .input_btn input {
+    padding: 10px 20px;
+}
+
+.footer_column .input_btn svg {
+    background: #03a9f4;
+    color: white;
+    /* font-size: 10px; */
+    position: absolute;
+    width: 50px;
+    height: 39px;
+    font-weight: 200;
+}
+
+.footer_column .social_icon svg {
+    font-size: 20px;
+    color: white;
+    margin: 0 10px 0 0;
+}
+
+.footer_column .social_icon {
+    margin-top: 20px;
+}
+/* ===============================================
+            Footer Section End Hear
+=============================================== */
+
+
